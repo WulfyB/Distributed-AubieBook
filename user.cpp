@@ -1,0 +1,1 @@
+// User class supporting menu and main.

@@ -1,0 +1,1 @@
+// friendlist class supporting menu and main.

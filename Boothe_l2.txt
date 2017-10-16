@@ -1,0 +1,771 @@
+Test Case testing:
+
+Assuming a user is not logged in, the system should inform user of invalid choices (posting, wallpage) while offline.
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+h
+In order to view homepage, please first login!
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+p
+Please login before posting!
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+w
+In order to view wallpage, please first login!
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+
+
+As above shows, user is kicked from using the above and informed they should login first.
+
+Test Case 2:
+Suppose a user attempts to login with a username that isn't yet created.
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+l
+Please enter your username.
+Poppy
+User does not exist. Please create new user.
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+
+Test Case 3:
+User can create a new username, but once created, the username is reserved. Below, user creates Poppy, logs out, then attempts
+to create a new user Poppy.
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+l
+Please enter your username.
+Poppy
+User does not exist. Please create new user.
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+n
+Please input a unique username. Please only use alphanumeric characters. Usernames must contain a letter.
+Poppy
+            ===========================================================
+
+            |              Welcome to Aubiebook, Poppy!              |
+
+            ===========================================================
+
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+l
+You are logged in as Poppy. Do you wish to log out? (y/n)
+y
+You are now logged out!
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+n
+Please input a unique username. Please only use alphanumeric characters. Usernames must contain a letter.
+Poppy
+Another user already has that name. Please choose a unique username, or log in!
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+
+Test case 4:
+Let Poppy post and view wall page. The wall page displays the 3 most recent then asks if the user wants to see
+the rest. In this case, Poppy is not logged in. She will log in, post 4 messages then views Wall page to see 
+those messages.
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+l
+Please enter your username.
+Poppy
+            ===========================================================
+
+            |              Welcome back to AubieBook Poppy              |
+
+            ===========================================================
+
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+p
+Enter new post. To terminate, type $$ as a line input.
+Hey. This is my 1st message!
+$$
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+p
+Enter new post. To terminate, type $$ as a line input.
+I had to make a 2nd Message!
+$$
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+p
+Enter new post. To terminate, type $$ as a line input.
+This is my 3rd Message!
+$$
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+p
+Enter new post. To terminate, type $$ as a line input.
+My 4th message already? Aubiebook is easy!
+$$
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+w
+            ===========================================================
+
+            |                   Poppy's Wall Page                    |
+            ===========================================================
+
+
+My 4th message already? Aubiebook is easy!
+
+
+This is my 3rd Message!
+
+
+I had to make a 2nd Message!
+
+
+See more messages? Enter yes(y) or no(n).y
+Hey. This is my 1st message!
+
+
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Test case 5:
+Poppy will log out, then Teemo will create a new user, login, friend Poopy. Poopy will not be an available user.
+Teemo will then correctly friend Poppy, and post "Hey Poppy!" He will then view his wall page then home page before logging out.
+
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+                                                                l
+You are logged in as Poppy. Do you wish to log out? (y/n)
+y
+You are now logged out!
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+n
+Please input a unique username. Please only use alphanumeric characters. Usernames must contain a letter.
+Teemo
+            ===========================================================
+
+            |              Welcome to Aubiebook, Teemo!              |
+
+            ===========================================================
+
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+m
+What is the username of the friend you wish to add? (To cancel, enter $$ as new line)Poopy
+User not found. Poopy not added.
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+m
+What is the username of the friend you wish to add? (To cancel, enter $$ as new line)Poppy
+Poppy is now your friend!
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+p
+Enter new post. To terminate, type $$ as a line input.
+Hey Poppy!
+$$
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+w
+            ===========================================================
+
+            |                   Teemo's Wall Page                    |
+            ===========================================================
+
+
+Hey Poppy!
+
+
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+h
+            ===========================================================
+
+            |                   Teemo's Home Page                    |
+            ===========================================================
+
+
+Teemo>>
+
+Hey Poppy!
+
+
+Poppy>>
+
+My 4th message already? Aubiebook is easy!
+
+
+Poppy>>
+
+This is my 3rd Message!
+
+
+See more messages? Enter yes(y) or no(n).n
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+                                                                                                                                                          
+
+Test Case 5: Teemo will now post a new message with that #lol. Teemo will then log out and Poppy will log in 
+and view homepage before following #lol. Since Poppy is not Teemo's friend, she will only see the #lol on her homepage. Poppy will then 
+add Teemo as a friend, and view homepage again. The #lol message should only appear once.
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+                                                                p
+Enter new post. To terminate, type $$ as a line input.
+Can you see double? #lol
+This message is so awesome!
+$$
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+l
+You are logged in as Teemo. Do you wish to log out? (y/n)
+y
+You are now logged out!
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+l
+Please enter your username.
+Poppy
+            ===========================================================
+
+            |                   Welcome back to AubieBook Poppy                    |
+
+            ===========================================================
+
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+h
+            ===========================================================
+
+            |                   Poppy's Home Page                    |
+            ===========================================================
+Teemo>>
+
+Can you see double? #lol
+This message is so awesome
+
+Poppy>>
+
+My 4th message already? Aubiebook is easy!
+
+
+Poppy>>
+
+This is my 3rd Message!
+
+
+See more messages? Enter yes(y) or no(n).n
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+f
+What is the #topic you wish to follow?
+Remember, hashtags can only use alphabetical characters and be preceeded by a #. (To cancel, enter $$)lol
+#topics must begin with a #.
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+f
+What is the #topic you wish to follow?
+Remember, hashtags can only use alphabetical characters and be preceeded by a #. (To cancel, enter $$)#lol
+You are now following #lol!
+
+Test case 6:
+
+Cannot follow illegal hashtags (non alphabetical).
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+f
+What is the #topic you wish to follow?
+Remember, hashtags can only use alphabetical characters and be preceeded by a #. (To cancel, enter $$)##
+#topics must ONLY contain alphabetical characters after the #.
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+
+
+Test case 7: Cannot post against security check maintaining %[ and ]%
+====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+p
+Enter new post. To terminate, type $$ as a line input.
+Let's mess with security %[
+Previous line was not saved due to illegal character combination.
+Let's try again! ]%
+Previous line was not saved due to illegal character combination.
+Darn! Secure check prevents me from messing with Aubiebook.
+$$
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+
+Test case 8:
+When entering an illegal command, default will instruct user to select from the valid menu options.
+
+            ===================================================
+
+            |        Welcome to the Distrubatable AubieBook!         |
+            ===================================================
+
+
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+z
+That input is not a valid. Please refer to menu options, and try again.
+
+
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+
+
+Test case: System check with Teemo and Poppy (also shows that certain units work)
+
+            ===================================================
+
+            |        Welcome to the Distrubatable AubieBook!         |
+            ===================================================
+
+
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+z
+That input is not a valid. Please refer to menu options, and try again.
+
+
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+                                                                m
+In order to view wallpage, please first login!
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+l
+Please enter your username.
+Poppy
+            ===========================================================
+
+            |        Welcome back to AubieBook Poppy         |
+
+            ===========================================================
+
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+m
+What is the username of the friend you wish to add? (To cancel, enter $$ as new line)Teemo
+Teemo is now your friend!
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+m
+What is the username of the friend you wish to add? (To cancel, enter $$ as new line)Teemo
+Teemo is already your friend!
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+h
+            ===========================================================
+
+            |                   Poppy's Home Page                    |
+            ===========================================================
+
+
+Teemo>>
+
+Darn! Secure check prevents me from messing with Aubiebook.
+
+
+Teemo>>
+
+Can you see double? #lol
+This message is so awesome!
+
+
+Teemo>>
+
+Hey Poppy!
+
+
+See more messages? Enter yes(y) or no(n).y
+Poppy>>
+
+My 4th message already? Aubiebook is easy!
+
+
+Poppy>>
+
+This is my 3rd Message!
+
+
+Poppy>>
+
+I had to make a 2nd Message!
+
+
+Poppy>>
+
+Hey. This is my 1st message!
+
+
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+
+
+Test case 10:
+Illegal usernames
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+l
+You are logged in as Poppy. Do you wish to log out? (y/n)
+y
+You are now logged out!
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+n
+Please input a unique username. Please only use alphanumeric characters. Usernames must contain a letter.
+#newname
+Usernames must be alphanumerical only.
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+
+
+
+System demonstration:
+
+            ===================================================
+
+            |        Welcome to the Distrubatable AubieBook!         |
+            ===================================================
+
+
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+l
+Please enter your username.
+Wulfy
+            ===========================================================
+
+            |        Welcome back to AubieBook Wulfy         |
+
+            ===========================================================
+
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+f
+What is the #topic you wish to follow?
+Remember, hashtags can only use alphabetical characters and be preceeded by a #. (To cancel, enter $$)#nerd
+You are already following #nerd.
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+h
+            ===========================================================
+
+            |                   Wulfy's Home Page                    |
+            ===========================================================
+
+
+Poppy>>
+
+WUlfy! This is my fifth post!
+Did you See Teemo's post?
+#nerd
+
+
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+m
+What is the username of the friend you wish to add? (To cancel, enter $$ as new line)Poppy
+Poppy is now your friend!
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+h
+            ===========================================================
+
+            |                   Wulfy's Home Page                    |
+            ===========================================================
+
+
+Poppy>>
+
+WUlfy! This is my fifth post!
+Did you See Teemo's post?
+#nerd
+
+
+Poppy>>
+
+My 4th message already? Aubiebook is easy!
+
+
+Poppy>>
+
+This is my 3rd Message!
+
+
+See more messages? Enter yes(y) or no(n).y
+Poppy>>
+
+I had to make a 2nd Message!
+
+
+Poppy>>
+
+Hey. This is my 1st message!
+
+
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+p
+Enter new post. To terminate, type $$ as a line input.
+Thanks Poppy! He is a nerd! #lol
+$$
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+w
+            ===========================================================
+
+            |                   Wulfy's Wall Page                    |
+            ===========================================================
+
+
+Thanks Poppy! He is a nerd! #lol
+
+
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+h
+            ===========================================================
+
+            |                   Wulfy's Home Page                    |
+            ===========================================================
+
+
+Wulfy>>
+
+Thanks Poppy! He is a nerd! #lol
+
+
+Poppy>>
+
+WUlfy! This is my fifth post!
+Did you See Teemo's post?
+#nerd
+
+
+Poppy>>
+
+My 4th message already? Aubiebook is easy!
+
+
+See more messages? Enter yes(y) or no(n).n
+
+=====================================================================================================
+Menu options can be chosen by entering the relevant key: New user (n), log-in/Log-out (l), Post (p),
+ Wall page (w), Home page (h), Manage friends (m), Follow hashtag (f), Quit (q).
+
+Enter selection:
+q
+            ===========================================================
+
+            |             Thank you for using AubieBook              |
+            ===========================================================
+
+
+                                                                                                                                                            
